@@ -11,7 +11,7 @@ contract CryptoDevToken is ERC20, Ownable {
     ICryptoDevs CryptoDevsNft;
     uint256 public constant tokenPrice = 0.001 ether;
     uint256 public constant tokensPerNFT = 10 * 10**18;
-    uint256 public constant maxTotalSupply = 10000 * 10**18;
+    uint256 public constant maxTotalSupply = 1000 * 10**18;
 
     // Keeping track of how many tokens have been claimed
     mapping(uint256 => bool) public tokenIdsClaimed;
